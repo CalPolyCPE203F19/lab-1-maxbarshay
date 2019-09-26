@@ -31,7 +31,7 @@ public class TestCases
    @Test
    public void testSimpleIf3()
    {
-      fail("Missing SimpleIf3");
+      assertEquals(1000.2, SimpleIf.max(1, 1000.2), DELTA);
       /* TO DO: Write one more valid test case. */
    }
 
@@ -50,9 +50,9 @@ public class TestCases
    @Test
    public void testSimpleLoop3()
    {
-      fail("Missing SimpleLoop3");
       /* TO DO: Write one more valid test case to make sure that
          this function is not just returning 7. */
+      assertEquals(15, SimpleLoop.sum(1, 5));
    }
 
    @Test
@@ -76,7 +76,9 @@ public class TestCases
    @Test
    public void testSimpleArray3()
    {
-      fail("Missing SimpleArray3");
+      assertArrayEquals(
+        new int[] {100, 36},
+        SimpleArray.squareAll(new int[] {7, 5}));
       /* TO DO: Add a new test case. */
    }
 
