@@ -22,3 +22,4 @@ class Course
       return numUnits;
    }
 }
+

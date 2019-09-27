@@ -172,8 +172,6 @@ public class TestCases
          Arrays.asList(
             new Course("CPE 123", 4),
             new Course("CPE 101", 4),
-            new Course("CPE 202", 4),
-            new Course("CPE 203", 4),
             new Course("CPE 225", 4)));
       courseListsByStudent.put("Paul",
          Arrays.asList(
@@ -184,10 +182,6 @@ public class TestCases
       courseListsByStudent.put("Zoe",
          Arrays.asList(
             new Course("CPE 123", 4),
-            new Course("CPE 203", 4),
-            new Course("CPE 471", 4),
-            new Course("CPE 473", 4),
-            new Course("CPE 476", 4),
             new Course("CPE 572", 4)));
 
       /*
