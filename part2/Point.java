@@ -10,7 +10,7 @@ public class Point{
 
     public double getX() { return x; }
     public double getY() { return y; }
-    public double getRadius() { return Math.sqrt(Math.pow(x, 2) + Math.pow(x, 2)); }
+    public double getRadius() { return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)); }
     public double getAngle() { return Math.atan(y/x); }
     public Point rotate90(Point my_point){
         double orig_angle = my_point.getAngle();

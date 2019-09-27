@@ -14,11 +14,11 @@ class ExampleMap
          in a number of units strictly greater than the unitThreshold.
       */
 
-    for (String key : courseListsByStudentName.keySet()){
-        if (courseListsByStudentName.get(key).getNumUnits() > unitThreshold){
-          overEnrolledStudents.add(key);
-        }
-    }
+    // for (String key : courseListsByStudentName.keySet()){
+    //     if (courseListsByStudentName.get(key).getNumUnits() > unitThreshold){
+    //       overEnrolledStudents.add(key);
+    //     }
+    // }
 
       return overEnrolledStudents;      
    }
