@@ -78,7 +78,7 @@ public class TestCases
    {
       assertArrayEquals(
         new int[] {100, 36},
-        SimpleArray.squareAll(new int[] {7, 5}));
+        SimpleArray.squareAll(new int[] {10, 6}));
       /* TO DO: Add a new test case. */
    }
 
@@ -96,8 +96,14 @@ public class TestCases
    @Test
    public void testSimpleList2()
    {
-      fail("Missing SimpleList2");
+      
       /* TO DO: Add a new test case. */
+      List<Integer> input =
+         new LinkedList<Integer>(Arrays.asList(new Integer[] {10, 11, 12}));
+      List<Integer> expected =
+         new ArrayList<Integer>(Arrays.asList(new Integer[] {100, 121, 144}));
+
+      assertEquals(expected, SimpleList.squareAll(input));
    }
 
    @Test
@@ -115,7 +121,7 @@ public class TestCases
    @Test
    public void testBetterLoop3()
    {
-      fail("Missing BetterLoop3");
+      assertTrue(BetterLoop.contains(new int[] {5, 2, 123, 1}, 123));
       /* TO DO: Write a valid test case where the expected result is false. */
    }
 

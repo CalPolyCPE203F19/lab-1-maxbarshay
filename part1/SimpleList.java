@@ -15,6 +15,10 @@ class SimpleList
          input list into the output list.  Use a "foreach".
       */
 
+        for (int i : values){
+            newValues.add(i*i);
+        }
+
       return newValues;
    }
 }
