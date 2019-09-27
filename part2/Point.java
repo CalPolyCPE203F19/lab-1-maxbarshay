@@ -11,7 +11,10 @@ public class Point{
     public double getX() { return x; }
     public double getY() { return y; }
     public double getRadius() { return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)); }
-    public double getAngle() { return Math.atan(y/x); }
+    public double getAngle() { if (x < 0){
+        return (Math.PI + Math.atan(y/x));
+    } 
+    return Math.atan(y/x); }
     public Point rotate90(){
         Point new_point = new Point(-this.y, this.x);
         return new_point;
