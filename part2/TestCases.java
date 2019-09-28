@@ -62,6 +62,11 @@ public class TestCases
    }
 
    @Test
+   public void testGetAngle_5(){
+      assertEquals(Math.PI, new Point(-1.0, 0).getAngle(), DELTA);
+   }
+
+   @Test
    public void testRotate90()
    {
       Point my_point = new Point(1.0, 2.0);

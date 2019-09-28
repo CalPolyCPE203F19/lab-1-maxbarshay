@@ -17,7 +17,10 @@ public class Point{
         return -1*(Math.PI - Math.atan(y/x));
     } else if (x > 0 && y < 0){
         return (Math.atan(y/x));
-    } else{
+    } else if (x<0 && y == 0){
+        return Math.PI;
+    }
+    else{
        return Math.atan(y/x);
     }
      }
